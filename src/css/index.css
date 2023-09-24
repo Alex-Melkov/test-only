@@ -1,0 +1,191 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.bg-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.btn-pointer {
+  width: 41px;
+  height: 41px;
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+}
+
+.btn-pointer__content {
+  position: relative;
+}
+
+.btn-pointer__content__active-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 41px;
+  visibility: hidden;
+  border-radius: 40px;
+  padding: 11px 15px;
+}
+
+.btn-pointer__content__active-block__img {
+  margin-right: 15px;
+}
+
+.btn-pointer__content__active-block__text {
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  white-space: nowrap;
+}
+
+.background-green {
+  background: #6abf4b;
+}
+
+.background-blue {
+  background: #3877ee;
+}
+
+.btn-1 {
+  top: 68%;
+  left: 22%;
+}
+
+.btn-2 {
+  top: 46%;
+  left: 36%;
+}
+
+.btn-3 {
+  top: 26%;
+  left: 30%;
+}
+
+.btn-4 {
+  top: 21%;
+  left: 72%;
+}
+
+.btn-5 {
+  top: 40%;
+  left: 59%;
+}
+
+.btn-6 {
+  top: 44%;
+  left: 74%;
+}
+
+.btn-7 {
+  top: 60%;
+  left: 56%;
+}
+
+.btn-8 {
+  top: 74%;
+  left: 58%;
+}
+
+.btn-9 {
+  top: 62%;
+  left: 68%;
+}
+
+.btn-10 {
+  top: 67%;
+  left: 83%;
+}
+
+.active-btn .btn-pointer__content__active-block {
+  visibility: visible;
+}
